@@ -1,7 +1,32 @@
 [
     {
         "name": "Simple",
-        "title": "简答例子",
-        "desc": "简答例子的一段描述。"
+        "title": "基本使用",
+        "desc": "展示徽章数， count 属性为0时, 默认不显示, 设置 showZero 属性可显示。"
+    },
+    {
+        "name": "NoContent",
+        "title": "独立使用",
+        "desc": "没有包裹内容，单独使用徽章。"
+    },
+    {
+        "name": "OverflowCount",
+        "title": "封顶数字",
+        "desc": "超过 overflowCount 会追加显示+号。"
+    },
+    {
+        "name": "Count",
+        "title": "动态数字",
+        "desc": "动态改变 count 。"
+    },
+    {
+        "name": "Dot",
+        "title": "动态数字",
+        "desc": "没有具体数字。"
+    },
+    {
+        "name": "Status",
+        "title": "状态点",
+        "desc": "显示状态点。"
     }
 ]

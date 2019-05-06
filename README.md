@@ -10,37 +10,41 @@
 
 # xy-badge
 
-基于`React Hooks` + `typescript`的基础组件
+徽章组件
 
 ## 安装
 
 ```bash
 # yarn
-yarn add xy-badge
+yarn add xy-badge utils-hooks classnames
 ```
 
 ## 使用例子
 
-```ts
+```tsx
 import React from "react";
 import ReactDOM from "react-dom";
-import XyBadge from "xy-badge";
-ReactDOM.render(<XyBadge />, container);
+import { Badge, BadgeDot, ScrollNumber, ScrollNumberItem } from "xy-badge";
+ReactDOM.render(
+    <Badge count={10}>
+        <a>Link</a>
+    </Badge>,
+    container
+);
 ```
 
 ## API
 
-| 属性     | 说明                                                               | 类型           | 默认值    |
-| -------- | ------------------------------------------------------------------ | -------------- | --------- |
-| ghost    | 幽灵属性，使按钮背景透明                                           | boolean        | false     |
-| long     | 是否长按钮                                                         | boolean        | false     |
-| icon     | 设置按钮的图标类型                                                 | IconDefinition | -         |
-| loading  | 设置按钮载入状态                                                   | boolean        | `false`   |
-| disabled | 按钮失效状态                                                       | boolean        | `false`   |
-| shape    | 设置按钮形状，可选值为 `circle` 或者不设                           | string         | -         |
-| size     | 设置按钮大小，可选值为 `small` `large` 或者不设                    | string         | `default` |
-| type     | 设置按钮类型，可选值为 `primary` `dashed` `text` `danger` 或者不设 | string         | -         |
-| onClick  | `click` 事件的 handler                                             | function       | -         |
+| 属性          | 说明                                                                 | 类型                | 默认值 |
+| ------------- | -------------------------------------------------------------------- | ------------------- | ------ |
+| positionStyle | 悬浮 Badge 样式                                                      | React.CSSProperties | -      |
+| dot           | 点模式, 不展示详细数字, 值显示一个小红点                             | boolean             | false  |
+| status        | 状态, 可选值: "success"，"processing"，"default"，"error"，"warning" | string              | -      |
+| text          | 设置状态点时的文本                                                   | React.ReactNode     | -      |
+| children      | 包裹内容                                                             | React.ReactNode     | -      |
+| count         | 要展示的徽标数                                                       | number              | -      |
+| overflowCount | 封顶数值,超过封顶值不滚动数字，而是最追加一个+字符                   | number              | -      |
+| showZero      | 是否显示 0                                                           | boolean             | false  |
 
 ## 开发
 

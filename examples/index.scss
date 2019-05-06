@@ -1,0 +1,17 @@
+.head-example {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background: #eee;
+    display: inline-block;
+}
+
+.badge-demo {
+    .xy-badge:not(.xy-badge-status) {
+        margin-right: 20px;
+    }
+
+    .xy-badge-dot-status {
+        margin-right: 8px;
+    }
+}

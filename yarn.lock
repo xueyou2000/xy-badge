@@ -849,6 +849,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/classnames@^2.2.7":
+  version "2.2.7"
+  resolved "https://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.7.tgz#fb68cc9be8487e6ea5b13700e759bfbab7e0fefd"
+  integrity sha1-+2jMm+hIfm6lsTcA51m/urfg/v0=
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -8902,6 +8907,16 @@ xy-model@^0.0.2:
     react-dom "^16.8.2"
     utils-hooks "^0.0.65"
     xy-messagebox "^0.0.4"
+
+xy-switch@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/xy-switch/download/xy-switch-0.0.7.tgz#109555c31d2cd66c6175d1de4a2595f346664cc2"
+  integrity sha1-EJVVwx0s1mxhddHeSiWV80ZmTMI=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.65"
 
 y18n@^3.2.1:
   version "3.2.1"

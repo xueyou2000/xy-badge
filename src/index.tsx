@@ -1,18 +1,6 @@
-import React from "react";
+import Badge from "./Badge";
+import BadgeDot from "./BadgeDot";
+import ScrollNumber from "./ScrollNumber";
+import ScrollNumberItem from "./ScrollNumberItem";
 
-export interface MyComponentProps {
-    /**
-     * 根节点附加类名
-     */
-    className?: string;
-    /**
-     * 内敛样式
-     */
-    style?: React.CSSProperties;
-}
-
-export function MyComponent(props: MyComponentProps) {
-    return <div>Hello</div>;
-}
-
-export default MyComponent;
+export { Badge, BadgeDot, ScrollNumber, ScrollNumberItem };

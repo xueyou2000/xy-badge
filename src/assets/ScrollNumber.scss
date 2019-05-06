@@ -1,0 +1,68 @@
+$ScrollNumber: "xy-scroll-number";
+$ScrollNumberItem: "xy-scroll-number-item";
+
+.#{$ScrollNumber} {
+    top: auto;
+    display: inline-block;
+    position: relative;
+    transform: none;
+    height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+    background: #f5222d;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    box-shadow: 0 0 0 1px #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    transform-origin: center;
+    animation: zoomBadgeIn 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    animation-fill-mode: both;
+}
+.#{$ScrollNumber}__hidden {
+    animation: zoomBadgeOut 0.2s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+    animation-fill-mode: both;
+}
+.#{$ScrollNumber}__text {
+    vertical-align: top;
+}
+.#{$ScrollNumberItem} {
+    height: 100%;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    p {
+        height: 100%;
+        margin: 0;
+        font-size: 12px;
+        color: inherit;
+        line-height: unset;
+    }
+}
+
+@keyframes zoomBadgeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomBadgeOut {
+    0% {
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

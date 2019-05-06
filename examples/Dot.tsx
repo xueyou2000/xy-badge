@@ -5,12 +5,12 @@ import "./index.scss";
 export default function() {
     return (
         <div className="badge-demo">
-            <Badge count={5}>
+            <Badge dot={true}>
                 <a href="#" className="head-example" />
             </Badge>
-
-            <Badge count={0} showZero={true}>
-                <a href="#" className="head-example" />
+            <br />
+            <Badge dot={true}>
+                <a href="#">Link something</a>
             </Badge>
         </div>
     );

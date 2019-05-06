@@ -1,0 +1,31 @@
+$Badge: "xy-badge";
+$BadgeDot: "xy-badge-dot";
+$ScrollNumber: "xy-scroll-number";
+
+.#{$Badge} {
+    font-family: Monospaced Number, Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.#{$Badge}-position {
+    display: inline-block;
+}
+
+.#{$Badge}:not(.#{$Badge}-not-wrapper) {
+    .#{$Badge}-position {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+}
