@@ -1,6 +1,6 @@
 {
     "name": "xy-badge",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "基于 React Hooks 的徽章组件",
     "types": "es/index.d.ts",
     "main": "es/index.js",
@@ -36,21 +36,21 @@
         "registry": "http://registry.npmjs.org/"
     },
     "devDependencies": {
-        "@types/classnames": "^2.2.7",
-        "@types/jest": "24.0.6",
-        "@types/node": "11.9.4",
-        "@types/react": "16.8.2",
-        "@types/react-dom": "16.8.2",
-        "quick-react-scripts": "1.1.9",
-        "react-testing-library": "^6.0.0",
-        "xy-manual-tools": "0.1.4",
-        "xy-switch": "^0.0.7"
+        "@testing-library/react": "^9.1.3",
+        "@types/classnames": "^2.2.9",
+        "@types/jest": "24.0.18",
+        "@types/node": "12.7.3",
+        "@types/react": "16.9.2",
+        "@types/react-dom": "16.9.0",
+        "quick-react-scripts": "^1.2.2",
+        "xy-manual-tools": "^0.1.65",
+        "xy-switch": "^0.0.9"
     },
     "dependencies": {
         "classnames": "^2.2.6",
-        "react": "^16.8.2",
-        "react-dom": "^16.8.2",
-        "utils-hooks": "0.0.69"
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "utils-hooks": "^0.0.71"
     },
     "repository": {
         "type": "git",

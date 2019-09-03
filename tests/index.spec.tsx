@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 import { Badge } from "../src";
 
 describe("Badge", () => {
@@ -7,7 +7,7 @@ describe("Badge", () => {
         const wrapper = render(
             <Badge count={5}>
                 <a>Link</a>
-            </Badge>
+            </Badge>,
         );
         const link = wrapper.getByText("Link");
         expect(link.parentElement.classList.contains("xy-badge")).toBeTruthy();
@@ -19,7 +19,7 @@ describe("Badge", () => {
         const wrapper = render(
             <Badge count={60} overflowCount={10}>
                 <a>Link</a>
-            </Badge>
+            </Badge>,
         );
 
         const numbers = wrapper.container.querySelectorAll(".xy-scroll-number-item") as NodeListOf<HTMLElement>;
@@ -34,7 +34,7 @@ describe("Badge", () => {
         const wrapper = render(
             <Badge dot={true}>
                 <a>Link</a>
-            </Badge>
+            </Badge>,
         );
         const dot = wrapper.container.querySelector(".xy-badge-dot");
         expect(dot).toBeDefined();
@@ -44,7 +44,7 @@ describe("Badge", () => {
         const wrapper = render(
             <Badge status="processing" text="加载中">
                 <a>Link</a>
-            </Badge>
+            </Badge>,
         );
         const text = wrapper.getByText("加载中");
         expect(text.classList.contains("xy-badge-dot-text")).toBeTruthy();

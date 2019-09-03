@@ -8,8 +8,6 @@ export default function() {
     const [count, setCount] = useState(5);
     const [dot, setDot] = useState(true);
 
-    console.log("dot", dot);
-
     return (
         <div className="badge-demo">
             <div style={{ marginBottom: "20px" }}>
